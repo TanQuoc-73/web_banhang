@@ -1,0 +1,49 @@
+body{
+    
+}
+
+h1{
+    color: red;
+}
+.nav{
+    background-color: var(--main-color);
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    a{
+        margin: 10px;
+        text-decoration: none;
+        font-size: 23px;
+        color: var(--text-color);
+    }
+    a:hover{
+        color: var(--hover-color);
+        font-weight: 300;
+    }
+}
+.dataTable{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: 30px;
+    li{
+        color: red;
+        margin: 10px;
+        padding: 10px;
+    }
+    strong{
+        color: black !important;
+        margin-right: 10px;
+    }
+    tbody{
+        background-color: var(--main-color);
+        color: var(--text-color);
+        tr{
+            td{
+                padding: 10px;
+            }
+        }
+    }
+  
+}

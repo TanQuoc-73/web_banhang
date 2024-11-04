@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root {
+    --main-color: #fb9262; /* Màu chính */
+    --background-color: #fff0e9; /* Màu nền  */
+    --text-color: #472615; /* Màu chữ chính */
+    --text-color-secondary: #fce4d9; /* Màu chữ phụ */
+    --hover-color:rgb(147, 106, 90)   ;
+}
