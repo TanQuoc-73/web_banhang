@@ -1,0 +1,32 @@
+{
+  "name": "webbanhang",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanQuoc-73/web_banhang.git"
+  },
+  "keywords": [
+    "webbanhang",
+    "banhang",
+    "web"
+  ],
+  "author": "tanquoc73",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TanQuoc-73/web_banhang/issues"
+  },
+  "homepage": "https://github.com/TanQuoc-73/web_banhang#readme",
+  "description": "",
+  "dependencies": {
+    "@babel/core": "7.26.0",
+    "@babel/node": "7.26.0",
+    "@babel/preset-env": "7.26.0",
+    "body-parser": "1.20.3",
+    "express": "^4.21.1",
+    "nodemon": "3.1.7"
+  }
+}
