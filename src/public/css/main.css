@@ -7,15 +7,29 @@ h1{
 }
 .nav{
     background-color: var(--main-color);
+    height: 60px;
     display: flex;
-    height: 50px;
     align-items: center;
     justify-content: space-between;
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 0 10px;
+        h1{
+            color: white;
+            margin: 0 0 0 10px  ;
+        }
+    }
+    ul{
+        margin: 0 10px 0 0 ;
+    }
     a{
-        margin: 10px;
+
         text-decoration: none;
         font-size: 23px;
-        color: var(--text-color);
+        color: white;
+        font-weight: 400;
     }
     a:hover{
         color: var(--hover-color);
@@ -51,3 +65,82 @@ h1{
     }
   
 }
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+        width: 400px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        padding: 0 10px;
+        color: var(--text-color);
+        background-color: var(--background-color);
+    }
+    input:focus {
+        outline: none; /* Ẩn đường viền mặc định khi nhấn vào */
+    }
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .image-banner {
+        
+        display: flex;
+        width: 80%;
+        height: 500px;
+        margin: 40px 0 0 0 ;
+        justify-content: space-between;
+        img{
+            border-radius: 5px;
+        }
+        img:hover{
+            cursor: pointer;
+            transition: 0.1s;
+            transform: scale(1.01);
+            border: #ddd 1px solid;
+        }
+
+
+        .left{
+            overflow: hi;
+            background-color: var(--secondary-color);
+            width: 69.5%;
+            height: 500px;
+            img{
+                width: 100%;      /* Chiều rộng 100% của div */
+            height: 100%;     /* Chiều cao 100% của div */
+            object-fit: cover; /* Cắt ảnh để vừa khít mà không bị méo */
+            }
+        }
+        
+        .right{
+            img{
+                width: 100%;      /* Chiều rộng 100% của div */
+            height: 100%;     /* Chiều cao 100% của div */
+            object-fit: cover; /* Cắt ảnh để vừa khít mà không bị méo */
+            }
+            width: 29.5%;
+            height: 500px;
+            #top{
+                background-color: var(--secondary-color);
+                height: 242.5px;
+                margin-bottom: 15px;
+            }
+            #bottom{
+                background-color: var(--secondary-color);
+                height: 242.5px;
+            }
+        }
+    }
+
+    
+}
+
+
+

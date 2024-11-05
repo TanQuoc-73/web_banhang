@@ -14,7 +14,7 @@ let getUsersPage = (req, res) => {
 
 let getHomePage = (req, res) => {
     console.log('getHomePage');
-    return res.render('../views/web/index.ejs');
+    return res.render('../views/web/home.ejs');
 };
 
 module.exports ={
