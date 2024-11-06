@@ -6,9 +6,11 @@
 
 :root {
     --main-color: #fb9262; /* Màu chính */
+    --main1-color: #f8a580; /* Màu chính 1 */
+    --main2-color: #febc9d; /* Màu chính 2 */
     --background-color: #fff0e9; /* Màu nền  */
     --text-color: #472615; /* Màu chữ chính */
     --text-color-secondary: #fff2eb; /* Màu chữ phụ */
-    --hover-color:rgb(147, 106, 90)   ;
+    --hover-color:rgb(147, 106, 90);
     --secondary-color: #ffeee8;
 }
