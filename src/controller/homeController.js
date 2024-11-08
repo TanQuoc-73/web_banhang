@@ -7,10 +7,6 @@ let getUsersPage = (req, res) => {
         'SELECT * FROM `users`',
         function (err, results, fields) {
             if (err) throw err;
-            const dataWithId = results.map((user, index) => ({
-                ...user,
-                id: index + 1 // Bắt đầu từ 1
-            }));
             return res.render('../views/web/users.ejs', { dataUser: results });
         }
     );
