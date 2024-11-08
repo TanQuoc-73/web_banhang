@@ -35,34 +35,33 @@
         <table>
         <thead>
             <tr>
-                
+                <th>ID</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Address</th>
                 <th>Email</th>
-                <!-- <th>Hành Động</th> -->
+                <th>Hành Động</th>
             </tr>
         </thead>
         <tbody>
             <% dataUser.forEach(user => { %>
                 <tr>
-                    
+                    <td><%= user.id %></td>
                     <td><%= user.firstName %></td>
                     <td><%= user.lastName %></td>
                     <td><%= user.address %></td>
                     <td><%= user.email %></td>
-                    <!-- <td>
-                        <form action="/users/update/<%= user.id %>" method="POST" style="display:inline;">
-                            <input type="text" name="firstName" value="<%= user.firstName %>" required>
-                            <input type="text" name="lastName" value="<%= user.lastName %>" required>
-                            <input type="text" name="address" value="<%= user.address %>" required>
-                            <input type="email" name="email" value="<%= user.email %>" required>
-                            <button type="submit">Sửa</button>
-                        </form>
-                        <form action="/users/delete/<%= user.id %>" method="POST" style="display:inline;">
-                            <button type="submit">Xóa</button>
-                        </form>
-                    </td> -->
+                    <td>
+                            <button type="submit">
+                                <a href="/users/detail/<%= user.id%>">Chi tiết</a>
+                            </button>
+                            <button type="submit">
+                                <a href="/users/edit">Sửa</a>
+                            </button>
+                            <button type="submit">
+                                <a href="/users/delete">Xóa</a>
+                            </button>
+                    </td>
                 </tr>
             <% }) %>
         </tbody>

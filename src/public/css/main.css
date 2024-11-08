@@ -52,6 +52,7 @@ h1{
         border: 1px solid #ddd; /* Đường viền cho các ô */
         padding: 8px; /* Khoảng cách bên trong các ô */
         text-align: left; /* Căn trái cho nội dung */
+        color:var(--text-color);
     }
     
     th {
@@ -64,6 +65,33 @@ h1{
     
     tr:hover {
         background-color: #ddd; /* Màu nền khi di chuột qua hàng */
+    }
+
+    tbody{
+        td{
+            button{
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                color: #735646;
+                font-size: 17px;
+            }
+            button:hover{
+                background-color: #735646;
+                cursor: pointer;
+                color: #fff;
+            }
+            a{
+                text-decoration: none;
+                color: #735646;
+                padding: 5px;
+                
+            }
+            a:hover{
+                color: #fff;
+            }
+
+        }
     }
   
 }
@@ -217,6 +245,8 @@ h1{
     }
     
 }
+
+
 
 
 
