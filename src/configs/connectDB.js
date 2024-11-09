@@ -1,6 +1,8 @@
 // Get the client
 import mysql from 'mysql2';
-const myswp = require('');
+// const mysql = require('');
+
+
 // Create the connection to database
 const connection = mysql.createConnection({
   host: 'localhost',

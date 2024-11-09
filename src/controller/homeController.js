@@ -1,6 +1,15 @@
 import express from "express";
 import connection from "../configs/connectDB";
 
+
+// WEB TRANG CHỦ
+let getHomePage = (req, res) => {
+    console.log('getHomePage');
+    return res.render('../views/web/home.ejs');
+};
+
+
+//WEB NGƯỜI DÙNG
 let getUsersPage = (req, res) => {
     let data =[];
     connection.query(
@@ -12,12 +21,17 @@ let getUsersPage = (req, res) => {
     );
 }
 
-let getHomePage = (req, res) => {
-    console.log('getHomePage');
-    return res.render('../views/web/home.ejs');
-};
+
+// WEB THÔNG TIN CHI TIẾT NGƯỜI DÙNG
+let getDetailPage = (req, res) => {
+    console.log('getDetailPage');
+    return res.render('../views/web/detail.ejs');
+}
+
+
 
 module.exports ={
     getUsersPage: getUsersPage,
-    getHomePage: getHomePage
+    getHomePage: getHomePage,
+    getDetailPage: getDetailPage
 }
