@@ -3,14 +3,14 @@ import connection from "../configs/connectDB";
 
 
 // WEB TRANG CHỦ
-let getHomePage = (req, res) => {
+let getHomePage = async (req, res) => {
     console.log('getHomePage');
     return res.render('../views/web/home.ejs');
 };
 
 
 //WEB NGƯỜI DÙNG
-let getUsersPage = (req, res) => {
+let getUsersPage = async (req, res) => {
     let data =[];
     connection.query(
         'SELECT * FROM `users`',
@@ -19,6 +19,7 @@ let getUsersPage = (req, res) => {
             return res.render('../views/web/users.ejs', { dataUser: results });
         }
     );
+
 }
 
 

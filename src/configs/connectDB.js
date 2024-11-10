@@ -3,6 +3,8 @@ import mysql from 'mysql2';
 // const mysql = require('');
 
 
+
+
 // Create the connection to database
 const connection = mysql.createConnection({
   host: 'localhost',
